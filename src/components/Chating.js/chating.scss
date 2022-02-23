@@ -1,0 +1,113 @@
+@import "../Sys/Variable.scss";
+
+.user-chat-list-box {
+  height: 400px;
+  border: 2px solid #dededf;
+  border-radius: 5px;
+
+  .user-chat-box-content {
+    border-bottom: 1px solid #dededf6e;
+    .user-chat {
+      margin: 10px;
+    }
+    .user-name-image {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .image-user {
+        border: 1px solid #dededf;
+        border-radius: 50px;
+        object-fit: contain;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.user-chat-detail-box {
+  height: 400px;
+  border: 2px solid #dededf;
+  border-radius: 5px;
+  .user-chat-detail-content {
+    height: 338px;
+    overflow: auto;
+    border-radius: 5px;
+    padding: 10px;
+    .user-chat-name-user{
+      border-bottom: 1px solid #dededf;
+      padding-bottom: 10px;
+      margin-bottom: 8px;
+    }
+    .sender-message {
+      border: 1px solid #dededf;
+      border-radius: 5px;
+      padding: 6px;
+      margin-bottom: 5px;
+      background-color: #6c0ac7;
+      color: #fff;
+    }
+    .user-chat-detail {
+      justify-content: end;
+      display: flex;
+    }
+    .reciver-message {
+      border: 1px solid #dededf;
+      border-radius: 5px;
+      padding: 6px;
+      clear: both;
+      display: inline-block;
+      margin-bottom: 5px;
+      background-color: #fff;
+      color: #6c0ac7;
+    }
+  }
+  .bottom-input-send-message {
+    height: 60px;
+    border-top: 1px solid #dededf;
+    padding: 10px;
+    .input-box-send {
+      display: flex;
+      align-items: center;
+      .emoji-style-custom{
+        position: absolute;
+        width: 93%;
+        left: 17px;
+        z-index: 999;
+        top: 27%;
+        aside.emoji-picker-react{
+          width: 100%;
+          height: 235px;
+        }
+      }
+      .smile-in-chat {
+        font-size: 25px;
+        margin-right: 15px;
+        position: relative;
+      }
+      .input-box-custom {
+        width: 92%;
+      }
+    }
+  }
+}
+.add-user-friend-list-modal {
+  p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    span {
+      color: #7979aa;
+      font-size: 14px;
+    }
+  }
+  button.ui.button.save-btn {
+    background: $primaryColor;
+    color: #fff;
+  }
+  button.ui.button.save-btn:hover {
+    background: #009eb0;
+  }
+}
+.input-search-friend {
+  width: 60%;
+  margin-bottom: 20px;
+}
